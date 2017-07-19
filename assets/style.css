@@ -1,0 +1,18 @@
+#trivia{
+	margin: 0 auto;
+	height: auto;
+	min-height: 300px;
+	width: 500px;
+	background-color: #4670b5;
+	color: #ffffff;
+	text-align: center;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+}
+
+.title{
+	padding-top: 50px;
+}
+input[type={
+	margin-right: 10px;
+}
