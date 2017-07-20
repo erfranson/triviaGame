@@ -6,12 +6,14 @@ var q1 = ["George Washington ", "Donald Trump ", "Richard Nixon ", "Barrack Obam
 var q2 = ["It's Gonna Be Me ", "Bye Bye Bye ", "Pop ", "Tearin' up My Heart "];
 var q3 =["Game Boy ", "PS2 ", "Nintendo DS ", "Xbox 360 " ];
 var q4=["Shooting ", "Car Crash ", "Overdose ", "Downed "];
+var a1 = $("input[value='George Washington']:checked");
 var count=45;
 var incorrect = 0;
 var correct = 0;
 var unanswered = 0;
 
-$('#trivia').click( function(){
+
+$('button').click( function(){
 	$('button').hide();
 	var counter =setInterval(timer, 1000);
 	function timer() {
