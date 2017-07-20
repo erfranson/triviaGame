@@ -2,15 +2,14 @@ var question1 = ["Who was the first president?"];
 var question2 = ["What is Nsync's most popular song on spotify?"];
 var question3 = ["What Video game console Has the most Sales?"];
 var question4 =["How did Marissa Cooper die on the OC?"];
-var q1 = ["George Washington ", "Donald Trump ", "Richard Nixon ", "Barrack Obama"];
+var q1 = ["George Washington ", "Donald Trump ", "Richard Nixon ", "Barrack Obama "];
 var q2 = ["It's Gonna Be Me ", "Bye Bye Bye ", "Pop ", "Tearin' up My Heart "];
 var q3 =["Game Boy ", "PS2 ", "Nintendo DS ", "Xbox 360 " ];
 var q4=["Shooting ", "Car Crash ", "Overdose ", "Downed "];
 var a1 = $("input[value='George Washington']:checked");
-var count=45;
+var count= 40;
 var incorrect = 0;
 var correct = 0;
-var unanswered = 0;
 
 
 $('button').click( function(){
@@ -21,7 +20,7 @@ $('button').click( function(){
 	if (count <= 0) {
 		clearInterval(counter);
 		$('.content').empty();
-		$('.content').append('<p> incorrect: '+ incorrect + '<p>' + '<p> correct: '+ correct +'<p>' + '<p> unanswered: '+ unanswered +'<p>');
+		$('.content').append('<p> incorrect: '+ incorrect + '<p>' + '<p> correct: '+ correct +'<p>');
 	}
 	$('.timer').html('<h3>'+ count + 'secs </h3>');
 }
@@ -31,7 +30,41 @@ $('button').click( function(){
 	quest3();
 	quest4();
 
-
+$('input').on('click', function(){
+	if(this.value == "George Washington ") {
+		correct++;
+	} else if (this.value === "PS2 ") {
+		correct++;
+	} else if (this.value === "Car Crash "){
+		correct++;
+	} else if (this.value === "Bye Bye Bye ") {
+		correct++;
+	} else if (this.value === "It's Gonna Be Me ") {
+		incorrect++
+	} else if (this.value === "Game Boy ") {
+		incorrect++
+	} else if (this.value === "Nintendo DS ") {
+		incorrect++
+	} else if (this.value === "Xbox 360 ") {
+		incorrect++
+	} else if (this.value === "Donald Trump ") {
+		incorrect++
+	} else if (this.value === "Richard Nixon ") {
+		incorrect++
+	} else if (this.value === "Barrack Obama ") {
+		incorrect++
+	} else if (this.value === "Pop ") {
+		incorrect++
+	} else if (this.value === "Tearin' up My Heart ") {
+		incorrect++
+	} else if (this.value === "Shooting ") {
+		incorrect++
+	} else if (this.value === "Overdose ") {
+		incorrect++
+	} else if (this.value === "Downed ") {
+		incorrect++
+	}
+});
 	
 });
 
